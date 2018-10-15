@@ -111,6 +111,7 @@ int main(int argc, char *argv[])
 	{	
 		case 'h':
 			diect();
+			return 1;
 			break;
 		case 'c':
 			clients=atoi(optarg);

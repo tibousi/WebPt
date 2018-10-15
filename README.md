@@ -1,7 +1,7 @@
 # WebPt
-web presure test\n
+web presure test
 -h --help 打印帮助信息
--c --clients 最为常用的参数，每次测试必设置，并发数量，例 -c10代表10个并发
+-c --clients 最为常用的参数，每次测试必设置，并发数量，例 -c 10代表10个并发
 -t --time 非常常用的参数，设置测试的时间，默认以分钟为单位，其他单位要自己设置，例如-t 10，测试持续10秒
 -1 --http1.1 使用http1.1
 -p --proxy 形似server:port ,使用代理服务器
