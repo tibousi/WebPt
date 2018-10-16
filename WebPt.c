@@ -262,6 +262,7 @@ void turn_url(const char *url){
 	strcpy(new_url,url);
 	if(strlen(url)>1024){
 		fprintf(stderr, "URL is too long\n");
+		exit(1);
 	}
 	if((strncasecmp("http://",url,7))!=0){
 		char tmp_http[1024]="http://";
@@ -277,6 +278,12 @@ void build_request(const char *url)
 {	
 	bzero(host,1024);
 	bzero(request,1024);
+
+	if((method==2&&httpv!=1)||method==3&&httpv!=1)
+	{
+		fprintf(stderr, "please use HTTP/1.1\n");
+		exit(1);
+	}
 
 	strcpy(request,request_method[method]);
 
