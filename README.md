@@ -1,4 +1,5 @@
 # WebPt 一个基础的网站压力测试工具，灵感来源：Siege，使用进程并发
+a linux-side web pressure test tool,used by fork.Support different request method,proxy server and commands from text</br>
 -h --help 打印帮助信息</br>
 -c --clients 最为常用的参数，每次测试必设置，并发数量，例 -c 10代表10个并发</br>
 -t --time 非常常用的参数，设置测试的时间，默认以分钟为单位，其他单位要自己设置，例如-t 10，测试持续10秒</br>
