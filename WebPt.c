@@ -245,6 +245,10 @@ int main(int argc, char *argv[])
 			bytes=0;
 			fail=0;
 			sleep(1);
+			for(int j=0;j<argc;j++){
+        			free(argv[j]);
+        			argv[j]=NULL;
+        	}
 			goto argflag2;
 		}
 		if(deal<0&&fileflag==message_length)
