@@ -1,4 +1,4 @@
-WebPt: WebPt.c
-	gcc -g -W -Wall -o $@ $<
+WebPt: Web_Pt.c
+	gcc -fopenmp -w -o $@ $<
 clean:
 	rm WebPt

@@ -1,11 +1,4 @@
-#include <unistd.h>
-#include <netdb.h>
-#include <arpa/inet.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <stdlib.h>
-#include <string.h>
+#include"Header.h"
 
 int Socket(const char *host,int port)
 {
