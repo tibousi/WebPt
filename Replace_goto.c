@@ -27,6 +27,7 @@ void Replace_goto(const char *host,const int *port ,const char *request,
 			int sr=read(s,recv,1024);
 			if(sr<0) 
             { 
+	    	(*fail)++;
                 close(s);
                 Replace_goto(host,port ,request,flag,len,recv,fail,bytes,success);
             }
